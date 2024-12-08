@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    font-family: "Jaro", sans-serif;
+    min-height:100vh;
+}
+.notes{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    max-width:800px ;
+    
+}
+.notes-container{
+      position: relative;
+      width: 250px;
+      height: 250px;
+      background-color: white;
+      border-radius: 15px;
+}
+.notes-content{
+    padding: 15px;
+    height: calc(100%-40px);
+    color: black;
+    outline: none;
+}
+.note-action{
+    position:absolute;
+    bottom: 10px;
+    right: 10px;
+
+}
+.delete-note{
+    background-color:burlywood;
+    padding: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.create-note{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 250px;
+    width: 250px;
+    border-radius: 12px;
+    margin-left: 12px;
+    font-size: 90px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+
+}
+.create-note:hover{
+    transform: scale(1.2);
+
+}
